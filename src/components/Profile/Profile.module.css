@@ -34,4 +34,12 @@
   border-bottom: 1px solid #e0e1e2;
   width: 90%;
 }
+
+.btnContainer {
+  width: 90%;
+}
+
+.btnSpace {
+  margin-right: 1rem;
+}
 /* Iphone SE end */

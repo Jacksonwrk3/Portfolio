@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar/NavBar.jsx";
 import Profile from "../components/Profile/Profile.jsx";
+import Button from "../components/Button/Button.jsx";
 import "./global.css";
 export default function Home() {
   return (
