@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar/NavBar.jsx";
 import Profile from "../components/Profile/Profile.jsx";
-import Button from "../components/Button/Button.jsx";
+import AboutMe from "../components/AboutMe/AboutMe.jsx";
 import "./global.css";
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         alt="profile-banner"
         pfp="my-pfp.jpeg"
       />
+      <AboutMe />
     </>
   );
 }

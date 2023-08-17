@@ -6,8 +6,6 @@
   align-items: center;
 }
 
-.profileDetail {
-}
 .description {
   font-weight: 300;
 }
@@ -15,21 +13,23 @@
 .pfp {
   border-radius: 50%;
   width: 125px;
-  position: relative;
-  top: -40px;
-  left: -100px;
+  position: absolute;
+  bottom: -45%;
+  left: 4.75%;
   box-shadow: 5px 5px 50px -16px;
   border: 5px solid #e0e1e2;
 }
 
+.bannerPfpWrapper {
+  width: 100%;
+  margin-bottom: 8rem;
+  position: relative;
+}
 .name {
   font-size: 2rem;
   line-height: 1rem;
 
   font-family: "Poppins", sans-serif;
-}
-
-.btnContainer {
 }
 
 .btnSpace {
@@ -46,13 +46,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 7rem;
-}
-.infoHeader {
-  font-weight: 600;
-  color: #6e737f;
-}
-.contentWidth {
-  width: 90%;
 }
 
 .infoContainer {
@@ -75,13 +68,21 @@
   margin-right: 0.5rem;
 }
 
-.location {
-}
-
 .aboutMeDescription {
   font-weight: 300;
 }
 
-.sectionHeading {
+.nameButtonContainer {
+  width: 90%;
+}
+
+.btnContainer {
 }
 /* Iphone SE end */
+
+@media (min-width: 750px) {
+  .nameButtonContainer {
+    justify-content: space-between;
+    display: flex;
+  }
+}

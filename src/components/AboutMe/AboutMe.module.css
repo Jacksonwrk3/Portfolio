@@ -1,0 +1,97 @@
+/* Iphone SE */
+
+.mediaInfoContainer address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+.mediaInfoContainer {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* min-height: 7rem; */
+  min-height: 16rem;
+  width: 100%;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.mediaInfoContainer img {
+  width: 12px;
+}
+
+.infoDetail {
+  font-weight: 600;
+  color: #fb8500;
+  margin-right: 0.5rem;
+}
+
+.nameButtonContainer {
+  width: 90%;
+}
+
+.aboutMeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeContent {
+  width: 90%;
+}
+
+.infoHeader {
+  font-weight: 600;
+  color: #6e737f;
+}
+
+.aboutMeDescription {
+  color: #6e737f;
+}
+
+.infoLinks:hover {
+  opacity: 0.6;
+}
+/* IPHONE SE END */
+
+@media (min-width: 750px) {
+  /* About Me heading and About Me Description */
+  .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutMe {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .aboutMeDescription {
+    margin: 0;
+    width: 60%;
+  }
+  /* About Me heading and About Me Description  END*/
+
+  /* Location AND EMAIL  */
+  .infoContainer {
+  }
+
+  .mediaInfoContainer {
+    background-color: #f9d9a680;
+    border-radius: 16px;
+    flex-direction: row;
+    justify-content: space-around;
+    order: 2;
+    align-items: center;
+    min-height: 6rem;
+  }
+  /* Location AND EMAIL END */
+}
