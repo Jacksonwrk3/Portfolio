@@ -1,0 +1,20 @@
+.techStackContainer {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.techStackContent {
+  width: 90%;
+  height: 100%;
+  border: 2px solid blue;
+}
+
+.techStackLeft {
+  width: 25%;
+}
+
+.techStackRight {
+  width: 75%;
+}

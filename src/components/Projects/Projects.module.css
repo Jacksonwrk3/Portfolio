@@ -1,0 +1,12 @@
+.projectsContainer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsContent {
+  width: 90%;
+  height: 100%;
+  border: 2px solid blue;
+}

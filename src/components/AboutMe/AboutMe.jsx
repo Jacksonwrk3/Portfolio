@@ -1,16 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import * as styles from "./AboutMe.module.css";
 import SectionDivider from "../SectionDivider/SectionDivider";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import TextButton from "../TextButton/TextButton";
 const AboutMe = (props) => {
-  const [show, setShow] = useState(false);
-
-  const toggleShow = () => {
-    setShow((prevState) => {
-      return !prevState;
-    });
-  };
   return (
     <section className={styles.aboutMeContainer}>
       <div className={styles.aboutMeContent}>
@@ -68,29 +60,15 @@ const AboutMe = (props) => {
             before graduating from a Software Engineering Bootcamp.
             <br />
             <br />
-            I'm passionate about creating applications that improves quality of{" "}
-            {show ? (
-              <>
-                life, in any field. It'll always bring a smile on my face
-                knowing I was involved in improving someones life by {"<="}1%
-                😊`
-                <br />
-                <br />
-                When i'm not coding you can find me at the gym, playing sports,
-                or trying out new foods 🤤
-                <br />
-                <br />
-                <TextButton onClick={toggleShow}>Show less</TextButton>
-              </>
-            ) : (
-              <>
-                <br />
-                <br />
-                <TextButton onClick={toggleShow}>Read more</TextButton>
-              </>
-            )}
+            I'm passionate about creating applications that improves quality of
+            life, in any field. It'll always bring a smile on my face knowing I
+            was involved in improving someones life by {"<="} 1% <br />
+            <br />
+            When i'm not coding you can find me at the gym, playing sports, or
+            trying out new foods 🤤
           </p>
         </section>
+        <SectionDivider className={styles.desktopBorder} />
       </div>
     </section>
   );

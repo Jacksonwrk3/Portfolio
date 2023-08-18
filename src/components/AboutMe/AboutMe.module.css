@@ -13,8 +13,10 @@ a {
   flex-direction: column;
   justify-content: space-between;
   /* min-height: 7rem; */
-  min-height: 16rem;
+  min-height: 20rem;
+  margin-left: auto;
   width: 100%;
+  /* change back to 100% */
 }
 
 .infoContainer {
@@ -59,9 +61,10 @@ a {
 .infoLinks:hover {
   opacity: 0.6;
 }
+
 /* IPHONE SE END */
 
-@media (min-width: 750px) {
+@media (min-width: 900px) {
   /* About Me heading and About Me Description */
   .aboutMeContent {
     display: flex;
@@ -76,16 +79,22 @@ a {
 
   .aboutMeDescription {
     margin: 0;
-    width: 60%;
+    width: 75%;
   }
+  .aboutMeContent {
+  }
+
+  .desktopBorder {
+    display: block;
+    order: 4;
+  }
+
   /* About Me heading and About Me Description  END*/
 
   /* Location AND EMAIL  */
-  .infoContainer {
-  }
 
   .mediaInfoContainer {
-    background-color: #f9d9a680;
+    background-color: #fff3e3;
     border-radius: 16px;
     flex-direction: row;
     justify-content: space-around;
@@ -94,4 +103,10 @@ a {
     min-height: 6rem;
   }
   /* Location AND EMAIL END */
+}
+
+@media (min-width: 1250px) {
+  .mediaInfoContainer {
+    width: 75%;
+  }
 }
