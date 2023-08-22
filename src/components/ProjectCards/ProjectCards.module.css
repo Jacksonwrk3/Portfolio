@@ -1,0 +1,52 @@
+/* Iphone SE */
+.imgWrapper {
+  position: relative;
+}
+
+.projectImg {
+  max-width: 100%;
+}
+
+.colorLayer:hover {
+  transition: all 0.3s ease;
+  background-color: #fb8500;
+}
+.projectType {
+  color: #6e737f;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: -10%;
+  left: 32%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.projectDescription {
+  color: #6e737f;
+  font-weight: 400;
+  text-align: center;
+}
+
+.centerMarginTop {
+  display: inline-block;
+  margin-top: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.linkGroup {
+  display: flex;
+  justify-content: center;
+}
+a img {
+  width: 2rem;
+}
+
+.webLink {
+  margin-left: 1em;
+}
+
+.webLink {
+}
+/* IPHONE SE END */

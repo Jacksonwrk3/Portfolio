@@ -1,0 +1,12 @@
+.section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sectionLeft {
+  width: 25%;
+}
+
+.sectionRight {
+  width: 75%;
+}

@@ -1,5 +1,5 @@
+/* IPHONE SE */
 .projectsContainer {
-  height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -8,5 +8,69 @@
 .projectsContent {
   width: 90%;
   height: 100%;
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
 }
+
+.leftDiv {
+  width: 25%;
+}
+
+.rightDiv {
+  margin-top: 1rem;
+  width: 75%;
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+.projectSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstCardMargin {
+  margin-top: 1em;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.projectImg {
+  max-width: 100%;
+}
+
+.colorLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.colorLayer:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.projectType {
+  color: #6e737f;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: -10%;
+  left: 32%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.projectDescription {
+  color: #6e737f;
+  font-weight: 400;
+  text-align: center;
+}
+.centerMarginTop {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+/* IPHONE SE END */
