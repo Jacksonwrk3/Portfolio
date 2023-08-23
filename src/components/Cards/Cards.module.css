@@ -7,3 +7,9 @@
   border: 2px solid #e6e7ea;
   width: 300px;
 }
+
+@media (min-width: 900px) {
+  .card {
+    width: 250px;
+  }
+}

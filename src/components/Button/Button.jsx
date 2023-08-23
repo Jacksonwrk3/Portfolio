@@ -8,6 +8,7 @@ const Button = (props) => {
         props.variant === "primary" ? styles.primary : styles.secondary
       } ${props.className}`}
       onClick={props.onClick}
+      style={props.style}
     >
       {props.children}
     </button>

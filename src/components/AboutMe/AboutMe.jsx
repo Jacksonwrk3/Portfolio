@@ -55,17 +55,11 @@ const AboutMe = (props) => {
         <section className={styles.aboutMe}>
           <SectionHeading>About me</SectionHeading>
           <p className={styles.aboutMeDescription}>
-            I'm a Full Stack Developer who is always driven to learn. I began my
-            academic journey as a Computer Science major at Brooklyn College,
-            before graduating from a Software Engineering Bootcamp.
-            <br />
-            <br />
-            I'm passionate about creating applications that improves quality of
-            life, in any field. It'll always bring a smile on my face knowing I
-            was involved in improving someones life by {"<="} 1% <br />
-            <br />
-            When i'm not coding you can find me at the gym, playing sports, or
-            trying out new foods 🤤
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida
+            sem et tincidunt interdum. Nulla efficitur ligula vitae lacus varius
+            mollis. Sed sit amet tristique lacus, mattis elementum diam. Nulla
+            nec neque ipsum. Morbi facilisis sodales nulla. Nam justo lorem,
+            vestibulum non porta non, viverra id elit. Cras vestibulum risus nec
           </p>
         </section>
         <SectionDivider className={styles.desktopBorder} />

@@ -1,5 +1,5 @@
 import React from "react";
-// import * as styles from "./ProjectList.module.css";
+import * as styles from "./ProjectList.module.css";
 import ProjectCards from "../ProjectCards/ProjectCards";
 const ProjectList = (props) => {
   let allProjects = props.projectsArray.map((project) => {
@@ -13,7 +13,7 @@ const ProjectList = (props) => {
       />
     );
   });
-  return <>{allProjects}</>;
+  return <div className={`${props.className}`}>{allProjects}</div>;
 };
 
 export default ProjectList;

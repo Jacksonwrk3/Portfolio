@@ -10,7 +10,7 @@ const ProjectCards = (props) => {
     </a>
   );
   return (
-    <Cards>
+    <Cards className={styles.transition}>
       <article>
         <div className={styles.imgWrapper}>
           <img
