@@ -1,0 +1,49 @@
+.contactContainer {
+  /* height: 10%; */
+  bottom: 0px;
+  position: fixed;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #ffb366;
+  border-radius: 15px 15px 0 0;
+  flex-direction: column;
+}
+
+form {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+input {
+  text-align: center;
+  height: 2em;
+  color: #fb8500;
+  border: none;
+}
+
+textarea {
+  color: #fb8500;
+}
+.headingMargins {
+  margin-top: 1em;
+  width: 80%;
+  text-align: center;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.messageField {
+}
+
+.buttonAlignments {
+  margin: 1em auto;
+  width: fit-content;
+}

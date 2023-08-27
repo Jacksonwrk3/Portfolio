@@ -6,11 +6,9 @@
 }
 
 .projectButtonGroup {
-  border: 2px solid red;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  height: 6.25em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1em;
   width: 100%;
   margin-top: 0.5em;
 }
@@ -23,7 +21,6 @@
 }
 
 .leftDiv {
-  border: 2px solid red;
   /* width: 25%; */
 }
 .projectLayout {
@@ -90,6 +87,11 @@
 }
 
 /* IPHONE SE END */
+@media (min-width: 500px) {
+  .projectButtonGroup {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 @media (min-width: 750px) {
   .projectLayout {
@@ -114,6 +116,10 @@
   .leftDiv {
     width: 25%;
   }
+
+  .projectButtonGroup {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -122,8 +128,16 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .projectButtonGroup {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media (min-width: 1800px) {
   .projectLayout {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .projectButtonGroup {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as styles from "./Projects.module.css";
 import ProjectList from "../ProjectList/ProjectList";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionDivider from "../SectionDivider/SectionDivider";
 import Button from "../Button/Button";
 const Projects = () => {
   const projects = [
@@ -34,6 +35,7 @@ const Projects = () => {
   ];
   const [display, setDisplay] = useState(projects);
   const [clickedButton, setClickedButton] = useState("All");
+
   const clickedStyle = {
     backgroundColor: "#fb8500",
     color: "white",
@@ -53,42 +55,50 @@ const Projects = () => {
         <div className={styles.leftDiv}>
           <SectionHeading>Projects</SectionHeading>
           <div className={styles.projectButtonGroup}>
-            <Button
-              onClick={() => {
-                setClickedButton("Front End");
-                filterProjects("Front End", projects);
-              }}
-              style={clickedButton === "Front End" ? clickedStyle : null}
-            >
-              Front End
-            </Button>
-            <Button
-              onClick={() => {
-                setClickedButton("Back End");
-                filterProjects("Back End", projects);
-              }}
-              style={clickedButton === "Back End" ? clickedStyle : null}
-            >
-              Back End
-            </Button>
-            <Button
-              onClick={() => {
-                setClickedButton("Full Stack");
-                filterProjects("Full Stack", projects);
-              }}
-              style={clickedButton === "Full Stack" ? clickedStyle : null}
-            >
-              Full Stack
-            </Button>
-            <Button
-              onClick={() => {
-                setClickedButton("All");
-                setDisplay(projects);
-              }}
-              style={clickedButton === "All" ? clickedStyle : null}
-            >
-              All
-            </Button>
+            <div>
+              <Button
+                onClick={() => {
+                  setClickedButton("Front End");
+                  filterProjects("Front End", projects);
+                }}
+                style={clickedButton === "Front End" ? clickedStyle : null}
+              >
+                Front End
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => {
+                  setClickedButton("Back End");
+                  filterProjects("Back End", projects);
+                }}
+                style={clickedButton === "Back End" ? clickedStyle : null}
+              >
+                Back End
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => {
+                  setClickedButton("Full Stack");
+                  filterProjects("Full Stack", projects);
+                }}
+                style={clickedButton === "Full Stack" ? clickedStyle : null}
+              >
+                Full Stack
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => {
+                  setClickedButton("All");
+                  setDisplay(projects);
+                }}
+                style={clickedButton === "All" ? clickedStyle : null}
+              >
+                All
+              </Button>
+            </div>
           </div>
         </div>
         <div className={styles.rightDiv}>

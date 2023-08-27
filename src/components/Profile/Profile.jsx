@@ -7,7 +7,6 @@ const Profile = (props) => {
 
   const downloadFileAtURL = (url) => {
     const fileName = url.split("/").pop();
-    console.log(fileName);
     const aTag = document.createElement("a");
     aTag.href = url;
     aTag.setAttribute("download", fileName);
@@ -38,7 +37,14 @@ const Profile = (props) => {
           >
             Download Resume
           </Button>
-          <Button variant="primary">Contact</Button>
+          <Button
+            variant="primary"
+            onClick={() => {
+              props.onClick();
+            }}
+          >
+            Contact
+          </Button>
         </div>
       </div>
     </section>

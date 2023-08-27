@@ -14,6 +14,7 @@ const AboutMe = (props) => {
           <address className={styles.infoContainer}>
             <span className={styles.infoHeader}>Github</span>
             <a
+              target="_blank"
               href="https://github.com/Jacksonwrk3"
               className={styles.infoLinks}
             >
@@ -26,6 +27,7 @@ const AboutMe = (props) => {
           <address className={styles.infoContainer}>
             <span className={styles.infoHeader}>Linkedin</span>
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/jackson-zhu/"
               className={styles.infoLinks}
             >
