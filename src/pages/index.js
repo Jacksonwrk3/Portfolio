@@ -6,28 +6,37 @@ import Projects from "../components/Projects/Projects.jsx";
 import Divider from "../components/Divider/Divider.jsx";
 import ContactForm from "../components/ContactForm/ContactForm.jsx";
 import "./global.css";
+import * as styles from "./index.module.css";
 export default function Home() {
   const [displayContact, setDisplayContact] = useState(false);
-  const toggleContact = () => {
-    setDisplayContact((prevState) => {
-      return !prevState;
-    });
+  const openContact = () => {
+    setDisplayContact(true);
   };
+
+  const closeContact = () => {
+    setDisplayContact(false);
+  };
+  if (displayContact) {
+  }
   return (
     <>
-      <header>
+      {/* <header>
         <NavBar />
-      </header>
+      </header> */}
       <Profile
         imgSrc="maple-banner.jpeg"
         alt="profile-banner"
         pfp="my-pfp.jpeg"
-        onClick={toggleContact}
+        onClick={openContact}
       />
       <AboutMe />
       <Projects />
       <Divider />
-      {displayContact ? <ContactForm /> : null}
+      {displayContact ? (
+        <div className={styles.background} onClick={closeContact}>
+          <ContactForm closeContact={closeContact} />
+        </div>
+      ) : null}
     </>
   );
 }

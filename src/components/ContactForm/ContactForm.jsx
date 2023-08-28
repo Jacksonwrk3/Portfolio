@@ -8,71 +8,25 @@ const ContactForm = (props) => {
       <h2 className={`${styles.headingMargins} `}>
         Grab A Coffee & Chat With Me
       </h2>
-      {/* <form
-        action="https://formsubmit.co/jacksonzhu613@gmail.com"
-        method="POST"
-      >
-        <input
-          type="text"
-          id="firstName"
-          name="first-name"
-          placeholder="First Name"
-          required
-        />
-        <input
-          type="text"
-          id="lastName"
-          name="last-name"
-          placeholder="Last Name"
-          required
-        />
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          rows="6"
-          id="message"
-          name="message"
-          placeholder="Your Message"
-          className={styles.messageField}
-          required
-        />
-        <Button
-          type="submit"
-          variant="primary"
-          className={styles.buttonAlignments}
-          onClick={null}
-        >
-          Send Message
-        </Button>
-      </form> */}
       <form
         action="https://formsubmit.co/jacksonzhu613@gmail.com"
         method="POST"
       >
-        <input
-          type="text"
-          id="firstName"
-          name="first-name"
-          placeholder="First Name"
-          required
-        />
-        <input
-          type="text"
-          id="lastName"
-          name="last-name"
-          placeholder="Last Name"
-          required
-        />
+        <Button
+          type="button"
+          className={styles.closeButton}
+          onClick={props.closeContact}
+        >
+          Close
+        </Button>
+        <input type="text" id="name" name="name" placeholder="Name" required />
+
         <input
           type="text"
           id="email"
           name="email"
           placeholder="Email"
+          className={styles.email}
           required
         />
         <textarea
