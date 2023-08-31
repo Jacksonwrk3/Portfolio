@@ -50,7 +50,7 @@
 }
 
 .gridContent {
-  width: 80%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,8 +91,17 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1600px) {
   .rightSection {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .gridContent {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .gridContent {
+    width: 35%;
   }
 }
