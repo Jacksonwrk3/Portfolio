@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar/NavBar.jsx";
 import Profile from "../components/Profile/Profile.jsx";
 import AboutMe from "../components/AboutMe/AboutMe.jsx";
 import Projects from "../components/Projects/Projects.jsx";
 import Divider from "../components/Divider/Divider.jsx";
 import ContactForm from "../components/ContactForm/ContactForm.jsx";
+import Skills from "../components/Skills/Skills.jsx";
 import "./global.css";
 import * as styles from "./index.module.css";
 export default function Home() {
@@ -17,12 +17,16 @@ export default function Home() {
     setDisplayContact(false);
   };
   if (displayContact) {
+    document.body.style.margin = "0";
+    document.body.style.height = "100%";
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.height = "auto";
+    document.body.style.overflow = "scroll";
   }
   return (
     <>
-      {/* <header>
-        <NavBar />
-      </header> */}
+      <header></header>
       <Profile
         imgSrc="maple-banner.jpeg"
         alt="profile-banner"
@@ -30,6 +34,8 @@ export default function Home() {
         onClick={openContact}
       />
       <AboutMe />
+      <Skills />
+      <Divider />
       <Projects />
       <Divider />
       {displayContact ? (

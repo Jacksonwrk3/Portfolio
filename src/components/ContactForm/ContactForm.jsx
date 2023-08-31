@@ -4,7 +4,12 @@ import * as styles from "./ContactForm.module.css";
 
 const ContactForm = (props) => {
   return (
-    <div className={styles.contactContainer}>
+    <div
+      className={styles.contactContainer}
+      onClick={(event) => {
+        event.stopPropagation();
+      }}
+    >
       <h2 className={`${styles.headingMargins} `}>
         Grab A Coffee & Chat With Me
       </h2>
