@@ -6,3 +6,25 @@
   background-color: rgba(128, 128, 128, 0.5); /* Gray with 50% opacity */
   z-index: 1;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+}
+
+.box:nth-child(even) {
+  background-color: black;
+}
+
+.box:nth-child(odd) {
+  background-color: orange;
+}
+
+.fixed {
+  position: fixed;
+}

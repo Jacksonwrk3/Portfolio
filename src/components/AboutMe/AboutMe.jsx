@@ -4,7 +4,7 @@ import SectionDivider from "../SectionDivider/SectionDivider";
 import SectionHeading from "../SectionHeading/SectionHeading";
 const AboutMe = (props) => {
   return (
-    <section className={styles.aboutMeContainer}>
+    <section className={styles.aboutMeContainer} id="About">
       <div className={styles.aboutMeContent}>
         <div className={`${styles.mediaInfoContainer} `}>
           <address className={styles.infoContainer}>

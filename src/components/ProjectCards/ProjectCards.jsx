@@ -10,7 +10,7 @@ const ProjectCards = (props) => {
     </a>
   );
   return (
-    <Cards className={styles.transition}>
+    <Cards>
       <article>
         <div className={styles.imgWrapper}>
           <img
@@ -26,7 +26,12 @@ const ProjectCards = (props) => {
         <p className={styles.projectDescription}>{props.projectDescription}</p>
       </article>
       <div className={styles.linkGroup}>
-        <a href={props.githubLink} className={styles.githubLink}>
+        <a
+          href={props.githubLink}
+          className={styles.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="github-mark.png" alt="github icon" />
         </a>
         {props.deployedLink ? deployedSite : null}

@@ -21,13 +21,15 @@
   font-weight: 400;
   padding: 0.5rem 1rem;
   position: absolute;
-  bottom: -10%;
-  left: 30%;
+  left: 50%;
+  width: 60%;
+  bottom: -6.5%;
+  transform: translateX(-50%);
+  text-align: center;
   background-color: #fb8500;
   border-radius: 10px;
   color: white;
 }
-
 .projectDescription {
   color: #6e737f;
   font-weight: 400;
@@ -51,9 +53,6 @@ a img {
 
 .webLink {
   margin-left: 1em;
-}
-
-.webLink {
 }
 
 .githubLink {

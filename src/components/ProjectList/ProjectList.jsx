@@ -1,7 +1,7 @@
 import React from "react";
-import * as styles from "./ProjectList.module.css";
 import ProjectCards from "../ProjectCards/ProjectCards";
 const ProjectList = (props) => {
+  console.log("in projhects list ", props);
   let allProjects = props.projectsArray.map((project) => {
     return (
       <ProjectCards
@@ -9,6 +9,7 @@ const ProjectList = (props) => {
         projectName={project.projectName}
         projectDescription={project.projectDescription}
         deployedLink={project.deployedLink}
+        githubLink={project.githubLink}
         projectImg={project.imgSrc}
       />
     );

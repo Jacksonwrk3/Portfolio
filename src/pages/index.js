@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Profile from "../components/Profile/Profile.jsx";
+import ResumeContact from "../components/ResumeContact/ResumeContact.jsx";
 import AboutMe from "../components/AboutMe/AboutMe.jsx";
 import Projects from "../components/Projects/Projects.jsx";
 import Divider from "../components/Divider/Divider.jsx";
+import Profile from "../components/Profile/Profile.jsx";
 import ContactForm from "../components/ContactForm/ContactForm.jsx";
 import Skills from "../components/Skills/Skills.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
 import "./global.css";
 import * as styles from "./index.module.css";
 export default function Home() {
@@ -26,13 +28,9 @@ export default function Home() {
   }
   return (
     <>
-      <header></header>
-      <Profile
-        imgSrc="maple-banner.jpeg"
-        alt="profile-banner"
-        pfp="my-pfp.jpeg"
-        onClick={openContact}
-      />
+      <Navbar openContact={openContact} />
+      <Profile />
+      <ResumeContact onClick={openContact} />
       <AboutMe />
       <Skills />
       <Divider />

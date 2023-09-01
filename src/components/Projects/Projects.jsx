@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import * as styles from "./Projects.module.css";
 import ProjectList from "../ProjectList/ProjectList";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import SectionDivider from "../SectionDivider/SectionDivider";
 import Button from "../Button/Button";
 const Projects = () => {
   const projects = [
@@ -11,13 +10,16 @@ const Projects = () => {
       projectType: "Front End",
       projectName: "Atelier",
       projectDescription: "Modern product detail page for an e-commerce site",
+      githubLink: "https://github.com/Jacksonwrk3/Atelier",
     },
+
     {
       imgSrc: "excel.png",
       projectType: "Back End",
       projectName: "Product API Microservice",
       projectDescription:
         "RESTful products detail data microservice API for ecommerce site",
+      githubLink: "https://github.com/SDCBlueWhale/Questions-Answers-Services",
     },
     {
       imgSrc: "Musi.png",
@@ -25,12 +27,15 @@ const Projects = () => {
       projectName: "Musi",
       projectDescription:
         "A social media platform for musicians to network and create music async",
+      githubLink: "https://github.com/Jacksonwrk3/Musi",
     },
     {
       imgSrc: "motion.png",
+
       projectType: "Front End",
       projectName: "Motion",
-      projectDescription: "Notion inspired task mangement system",
+      projectDescription: "Notion inspired task mangement system ",
+      githubLink: "https://github.com/Jacksonwrk3/Motion",
     },
   ];
   const [display, setDisplay] = useState(projects);
@@ -50,7 +55,7 @@ const Projects = () => {
     setDisplay(filteredProjects);
   };
   return (
-    <section className={styles.projectsContainer}>
+    <section className={styles.projectsContainer} id="Projects">
       <div className={styles.projectsContent}>
         <div className={styles.leftDiv}>
           <SectionHeading>Projects</SectionHeading>

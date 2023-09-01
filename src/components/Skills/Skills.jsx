@@ -4,7 +4,7 @@ import * as styles from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <section className={styles.skillsContainer}>
+    <section className={styles.skillsContainer} id="Skills">
       <div className={styles.skillContent}>
         <div className={styles.leftSection}>
           <SectionHeading>Skills</SectionHeading>
@@ -13,7 +13,7 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="javascript.png" />
+                <img src="javascript.png" alt="javascript icon" />
               </div>
               <span>Javascript</span>
             </div>
@@ -21,7 +21,7 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="react.png" />
+                <img src="react.png" alt="react icon" />
               </div>
               <span>React</span>
             </div>
@@ -29,31 +29,7 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="typescript.png" />
-              </div>
-              <span>Typescript</span>
-            </div>
-          </div>
-          <div className={styles.grid}>
-            <div className={styles.gridContent}>
-              <div className={styles.imgContainer}>
-                <img src="nodejs.png" />
-              </div>
-              <span>NodeJS</span>
-            </div>
-          </div>
-          <div className={styles.grid}>
-            <div className={styles.gridContent}>
-              <div className={styles.imgContainer}>
-                <img src="postgres.png" />
-              </div>
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-          <div className={styles.grid}>
-            <div className={styles.gridContent}>
-              <div className={styles.imgContainer}>
-                <img src="html.png" />
+                <img src="html.png" alt="html icon" />
               </div>
               <span>HTML5</span>
             </div>
@@ -61,7 +37,7 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="css.png" />
+                <img src="css.png" alt="css icon" />
               </div>
               <span>CSS3</span>
             </div>
@@ -69,15 +45,32 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="mongodb.png" />
+                <img src="nodejs.png" alt="nodejs icon" />
               </div>
-              <span>MongoDB</span>
+              <span>NodeJS</span>
             </div>
-          </div>{" "}
+          </div>
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="express.png" />
+                <img src="postgres.png" alt="postgres icon" />
+              </div>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div className={styles.grid}>
+            <div className={styles.gridContent}>
+              <div className={styles.imgContainer}>
+                <img src="mongodb.png" alt="mongodb icon" />
+              </div>
+              <span>MongoDB</span>
+            </div>
+          </div>
+          <div className={styles.grid}>
+            <div className={styles.gridContent}>
+              <div className={styles.imgContainer}>
+                <img src="express.png" alt="express icon" />
               </div>
               <span>expressJS</span>
             </div>
@@ -85,7 +78,7 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="git.png" />
+                <img src="git.png" alt="git icon" />
               </div>
               <span>git</span>
             </div>
@@ -93,7 +86,15 @@ const Skills = () => {
           <div className={styles.grid}>
             <div className={styles.gridContent}>
               <div className={styles.imgContainer}>
-                <img src="nextjs.png" />
+                <img src="typescript.png" alt="typescript icon" />
+              </div>
+              <span>Typescript</span>
+            </div>
+          </div>
+          <div className={styles.grid}>
+            <div className={styles.gridContent}>
+              <div className={styles.imgContainer}>
+                <img src="nextjs.png" alt="nextjs icon" />
               </div>
               <span>NextJS</span>
             </div>
